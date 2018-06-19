@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1529402712266.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "DCFBBAC8",
+    "lastKnownWriteTime" : 1528723300,
+    "last_content_update" : 1528723300,
+    "path" : "~/Documents/CapeTown/kaggle-competition/kaggle/parameters.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "6,15",
+        "scrollLine" : "2"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

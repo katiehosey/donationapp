@@ -1,0 +1,77 @@
+# Libraries 
+library(dplyr)
+library(caret)
+library(rpart)
+library(vcdExtra)
+library(Epi)
+library(rattle)
+
+# Dataframes 
+app_train <- read.csv("application_train.csv", stringsAsFactors = FALSE, na.strings = c('NA', ' '))
+prev_app <- read.csv("previous_application.csv", stringsAsFactors = FALSE, na.strings = c('NA', ' '))
+credit_card <- read.csv("credit_card_balance.csv", stringsAsFactors = FALSE, na.strings = c('NA', ' '))
+app_test <- read.csv("application_test.csv", stringsAsFactors = FALSE, na.strings = c('NA', " "))
+
+# Replacing missing values in dataframe with means 
+meancredit <- median(app_train$AMT_CREDIT)
+meanreject <- median(prev_app$CODE_REJECT_REASON)
+meandp <- median(prev_app$AMT_DOWN_PAYMENT)
+meanpayment <- median(credit_card$AMT_PAYMENT_TOTAL_CURRENT)
+meanbalance <- median(credit_card$AMT_BALANCE)
+
+app_train$AMT_CREDIT[app_train$AMT_CREDIT=="NA"]<-meancredit
+prev_app$CODE_REJECT_REASON[prev_app$CODE_REJECT_REASON=='NA']<- meanreject
+prev_app$AMT_DOWN_PAYMENT[prev_app$AMT_DOWN_PAYMENT=='NA'] <- meandp
+credit_card$AMT_PAYMENT_TOTAL_CURRENT[credit_card$AMT_PAYMENT_TOTAL_CURRENT=='NA']<- meanpayment
+credit_card$AMT_BALANCE[credit_card$AMT_BALANCE=='NA'] <- meanbalance
+
+
+# Merging dataframes 
+
+merge1 <- app_train %>% left_join(prev_app)
+merge2 <- merge(x = merge1, y = credit_card, by = 1, all.x = TRUE)
+
+full_data <- data.frame(TARGET = merge2$TARGET, 
+                        AMT_CREDIT = merge2$AMT_CREDIT.x, 
+                        CODE_REJECT_REASON = merge2$CODE_REJECT_REASON,
+                        AMT_DOWN_PAYMENT = merge2$AMT_DOWN_PAYMENT, 
+                        AMT_PAYMENT_TOTAL_CURRENT = merge2$AMT_PAYMENT_TOTAL_CURRENT,
+                        AMT_BALANCE = merge2$AMT_BALANCE)
+
+View(full_data)
+
+# Parameter Tuning 
+TRCONTROL = trainControl(
+  method = "repeatedcv",
+  number = 10,
+  repeats = 5,
+  classProbs = TRUE,
+  summaryFunction = twoClassSummary,
+  verboseIter = TRUE
+)
+
+
+fit <- train(TARGET ~ AMT_DOWN_PAYMENT + AMT_PAYMENT_TOTAL_CURRENT + AMT_BALANCE + AMT_CREDIT, 
+             data = full_data, method = "glm",
+             metric = "ROC",
+             na.action = na.omit,
+             trControl = TRCONTROL)
+fit
+
+# Predicting
+app_test_predictions <- predict(fit, app_test)
+
+full_data <- data.frame(SK_ID_CURR = app_test$SK_ID_CURR, TARGET = app_test_predictions)
+
+write.csv(full_data,'predictiontable.csv', row.names = FALSE, quote = FALSE)
+
+
+
+
+
+lapply(1:dim(merge1)[2], function(i) {
+  data.frame(
+    colnames(merge1)[i],
+    sum(is.na(merge1[,i])))
+}
+) %>% bind_rows()

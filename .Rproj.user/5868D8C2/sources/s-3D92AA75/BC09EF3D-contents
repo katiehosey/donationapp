@@ -1,0 +1,23 @@
+library(ISLR)
+library(ROCR)
+library(Epi)
+library(vcdExtra)
+library(MASS)
+library(ggplot2)
+library(dplyr)
+library(mlbench)
+
+app_train <- read.csv("application_train.csv", stringsAsFactors = FALSE, na.strings = c('NA', ' '))
+app_test <- read.csv("application_test.csv", stringsAsFactors = FALSE, na.strings = c('NA', " "))
+
+
+fit <- lm(TARGET ~ EXT_SOURCE_1 + EXT_SOURCE_2 + EXT_SOURCE_3, app_train)
+
+app_test_predictions <- predict(fit, app_test)
+
+full_data <- data.frame(SK_ID_CURR = app_test$SK_ID_CURR, TARGET = app_test_predictions)
+
+write.csv(full_data,'predictiontable.csv', row.names = FALSE, quote = FALSE)
+
+
+

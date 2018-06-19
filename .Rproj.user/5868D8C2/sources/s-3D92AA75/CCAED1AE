@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1529405463001.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "CCAED1AE",
+    "lastKnownWriteTime" : 1529405704,
+    "last_content_update" : 1529405704242,
+    "path" : "~/Documents/CapeTown/guardian-angel/guardian/training-data/trainingset.R",
+    "project_path" : "training-data/trainingset.R",
+    "properties" : {
+        "cursorPosition" : "24,0",
+        "scrollLine" : "9"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

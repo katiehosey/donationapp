@@ -1,0 +1,16 @@
+# Libraries 
+library(dplyr)
+library(caret)
+library(rpart)
+library(vcdExtra)
+library(Epi)
+library(rattle)
+
+# Dataframes 
+wildfire <- read.csv("Colorado_wildfires.csv", stringsAsFactors = FALSE)
+floods <- read.csv("Alberta_floods.csv", stringsAsFactors = FALSE)
+earthquake <- read.csv("bohol_earthquake.csv", stringsAsFactors = FALSE)
+bombing <- read.csv("Boston_bombings.csv", stringsAsFactors = FALSE)
+shooting <- read.csv("LA_shooting.csv", stringsAsFactors = FALSE)
+traincrash <- read.csv("NY_train_crash.csv", stringsAsFactors = FALSE)
+explosion <- read.csv("west_tx_explosion.csv", stringsAsFactors = FALSE )
