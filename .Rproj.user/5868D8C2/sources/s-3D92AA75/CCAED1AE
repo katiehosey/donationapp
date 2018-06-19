@@ -7,13 +7,13 @@
     "folds" : "",
     "hash" : "0",
     "id" : "CCAED1AE",
-    "lastKnownWriteTime" : 1529405704,
-    "last_content_update" : 1529405704242,
+    "lastKnownWriteTime" : 1529412864,
+    "last_content_update" : 1529412864840,
     "path" : "~/Documents/CapeTown/guardian-angel/guardian/training-data/trainingset.R",
     "project_path" : "training-data/trainingset.R",
     "properties" : {
-        "cursorPosition" : "24,0",
-        "scrollLine" : "9"
+        "cursorPosition" : "5,0",
+        "scrollLine" : "0"
     },
     "relative_order" : 5,
     "source_on_save" : false,

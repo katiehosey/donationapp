@@ -31,3 +31,85 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 ]0;~/Documents/CapeTown/guardian-angel/guardianKaties-MacBook-Pro-3:guardian katie$ git init
 Reinitialized existing Git repository in /Users/katie/Documents/CapeTown/guardian-angel/guardian/.git/
 ]0;~/Documents/CapeTown/guardian-angel/guardianKaties-MacBook-Pro-3:guardian katie$ git add -A
+]0;~/Documents/CapeTown/guardian-angel/guardianKaties-MacBook-Pro-3:guardian katie$ git commit -m "training set"
+[master ec46d59] training set
+ Committer: Katie Hosey <katie@Katies-MacBook-Pro-3.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 53 files changed, 16624 insertions(+)
+ create mode 100644 .Rproj.user/5868D8C2/console06/18C4427C
+ create mode 100644 .Rproj.user/5868D8C2/console06/18C4427C.env
+ create mode 100644 .Rproj.user/5868D8C2/console06/INDEX001
+ create mode 100644 .Rproj.user/5868D8C2/sources/prop/373F9C9D
+ create mode 100644 .Rproj.user/5868D8C2/sources/prop/51EF692F
+ create mode 100644 .Rproj.user/5868D8C2/sources/prop/5D60C3F3
+ create mode 100644 .Rproj.user/5868D8C2/sources/prop/64313417
+ create mode 100644 .Rproj.user/5868D8C2/sources/prop/9678657
+ create mode 100644 .Rproj.user/5868D8C2/sources/prop/ACC9E7BF
+ create mode 100644 .Rproj.user/5868D8C2/sources/prop/DDB681C2
+ create mode 100644 .Rproj.user/5868D8C2/sources/prop/INDEX
+ create mode 100644 .Rproj.user/5868D8C2/sources/s-3D92AA75/3A223FCF-contents
+ create mode 100644 .Rproj.user/5868D8C2/sources/s-3D92AA75/5AE40914-contents
+ create mode 100644 .Rproj.user/5868D8C2/sources/s-3D92AA75/A47E4D6F
+ create mode 100644 .Rproj.user/5868D8C2/sources/s-3D92AA75/A47E4D6F-contents
+ create mode 100644 .Rproj.user/5868D8C2/sources/s-3D92AA75/BC09EF3D-contents
+ create mode 100644 .Rproj.user/5868D8C2/sources/s-3D92AA75/C5DDCCFA-contents
+ create mode 100644 .Rproj.user/5868D8C2/sources/s-3D92AA75/CCAED1AE
+ create mode 100644 .Rproj.user/5868D8C2/sources/s-3D92AA75/CCAED1AE-contents
+ create mode 100644 .Rproj.user/5868D8C2/sources/s-3D92AA75/D2718DE5
+ create mode 100644 .Rproj.user/5868D8C2/sources/s-3D92AA75/D2718DE5-contents
+ create mode 100644 .Rproj.user/5868D8C2/sources/s-3D92AA75/DCFBBAC8
+ create mode 100644 .Rproj.user/5868D8C2/sources/s-3D92AA75/DCFBBAC8-contents
+ create mode 100644 .Rproj.user/5868D8C2/sources/s-3D92AA75/E1383AC-contents
+ create mode 100644 .Rproj.user/5868D8C2/sources/s-3D92AA75/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ create mode 100644 guardian.Rproj
+ create mode 100644 model-shell.R
+ create mode 100644 sample-twitter-scrape.R
+ create mode 100755 testing-data/2013_Australia_bushfire-tweets_labeled.csv
+ create mode 100755 testing-data/2013_Colorado_floods-tweets_labeled.csv
+ create mode 100755 testing-data/2013_Glasgow_helicopter_crash-tweets_labeled.csv
+ create mode 100755 testing-data/2013_Queensland_floods-tweets_labeled.csv
+ create mode 100644 training-data/Alberta_floods.csv
+ create mode 100644 training-data/Boston_bombings.csv
+ create mode 100644 training-data/Colorado_wildfires.csv
+ create mode 100644 training-data/LA_shooting.csv
+ create mode 100644 training-data/NY_train_crash.csv
+ create mode 100644 training-data/bohol_earthquake.csv
+ create mode 100644 training-data/iX_hackathon_random_tweets.csv
+ create mode 100755 training-data/original-files/2012_Colorado_wildfires-tweets_labeled.csv
+ create mode 100755 training-data/original-files/2013_Alberta_floods-tweets_labeled.csv
+ create mode 100755 training-data/original-files/2013_Bohol_earthquake-tweets_labeled.csv
+ create mode 100755 training-data/original-files/2013_Boston_bombings-tweets_labeled.csv
+ create mode 100755 training-data/original-files/2013_LA_airport_shootings-tweets_labeled.csv
+ create mode 100755 training-data/original-files/2013_NY_train_crash-tweets_labeled.csv
+ create mode 100755 training-data/original-files/2013_West_Texas_explosion-tweets_labeled.csv
+ create mode 100644 training-data/original-files/LA-shooting.csv
+ create mode 100644 training-data/original-files/bohol-earthquake.csv
+ create mode 100644 training-data/original-files/west-tx-explosion.csv
+ create mode 100644 training-data/trainingset.R
+ create mode 100644 training-data/west_tx_explosion.csv
+]0;~/Documents/CapeTown/guardian-angel/guardianKaties-MacBook-Pro-3:guardian katie$ git push -u origin master
+Counting objects: 56, done.
+Delta compression using up to 4 threads.
+Compressing objects:   1% (1/53)   Compressing objects:   3% (2/53)   Compressing objects:   5% (3/53)   Compressing objects:   7% (4/53)   Compressing objects:   9% (5/53)   Compressing objects:  11% (6/53)   Compressing objects:  13% (7/53)   Compressing objects:  15% (8/53)   Compressing objects:  16% (9/53)   Compressing objects:  18% (10/53)   Compressing objects:  20% (11/53)   Compressing objects:  22% (12/53)   Compressing objects:  24% (13/53)   Compressing objects:  26% (14/53)   Compressing objects:  28% (15/53)   Compressing objects:  30% (16/53)   Compressing objects:  32% (17/53)   Compressing objects:  33% (18/53)   Compressing objects:  35% (19/53)   Compressing objects:  37% (20/53)   Compressing objects:  39% (21/53)   Compressing objects:  41% (22/53)   Compressing objects:  43% (23/53)   Compressing objects:  45% (24/53)   Compressing objects:  47% (25/53)   Compressing objects:  49% (26/53)   Compressing objects:  50% (27/53)   Compressing objects:  52% (28/53)   Compressing objects:  54% (29/53)   Compressing objects:  56% (30/53)   Compressing objects:  58% (31/53)   Compressing objects:  60% (32/53)   Compressing objects:  62% (33/53)   Compressing objects:  64% (34/53)   Compressing objects:  66% (35/53)   Compressing objects:  67% (36/53)   Compressing objects:  69% (37/53)   Compressing objects:  71% (38/53)   Compressing objects:  73% (39/53)   Compressing objects:  75% (40/53)   Compressing objects:  77% (41/53)   Compressing objects:  79% (42/53)   Compressing objects:  81% (43/53)   Compressing objects:  83% (44/53)   Compressing objects:  84% (45/53)   Compressing objects:  86% (46/53)   Compressing objects:  88% (47/53)   Compressing objects:  90% (48/53)   Compressing objects:  92% (49/53)   Compressing objects:  94% (50/53)   Compressing objects:  96% (51/53)   Compressing objects:  98% (52/53)   Compressing objects: 100% (53/53)   Compressing objects: 100% (53/53), done.
+Writing objects:   1% (1/56)   Writing objects:   3% (2/56)   Writing objects:   5% (3/56)   Writing objects:   7% (4/56)   Writing objects:   8% (5/56)   Writing objects:  10% (6/56)   Writing objects:  12% (7/56)   Writing objects:  14% (8/56)   Writing objects:  16% (9/56)   Writing objects:  17% (10/56)   Writing objects:  19% (11/56)   Writing objects:  21% (12/56)   Writing objects:  23% (13/56)   Writing objects:  25% (14/56)   Writing objects:  26% (15/56)   Writing objects:  28% (16/56)   Writing objects:  30% (17/56)   Writing objects:  32% (18/56)   Writing objects:  33% (19/56)   Writing objects:  35% (20/56)   Writing objects:  37% (21/56)   Writing objects:  41% (23/56)   Writing objects:  42% (24/56)   Writing objects:  44% (25/56)   Writing objects:  48% (27/56)   Writing objects:  50% (28/56)   Writing objects:  51% (29/56)   Writing objects:  53% (30/56)   Writing objects:  55% (31/56)   Writing objects:  57% (32/56)   Writing objects:  58% (33/56)   Writing objects:  60% (34/56)   Writing objects:  62% (35/56)   Writing objects:  64% (36/56)   Writing objects:  66% (37/56)   Writing objects:  67% (38/56)   Writing objects:  69% (39/56)   Writing objects:  71% (40/56)   Writing objects:  73% (41/56)   Writing objects:  75% (42/56)   Writing objects:  76% (43/56)   Writing objects:  78% (44/56)   Writing objects:  80% (45/56)   Writing objects:  82% (46/56)   Writing objects:  83% (47/56)   Writing objects:  85% (48/56)   Writing objects:  87% (49/56)   Writing objects:  89% (50/56)   Writing objects:  91% (51/56)   Writing objects:  92% (52/56)   Writing objects:  94% (53/56)   Writing objects:  96% (54/56)   Writing objects:  98% (55/56)   Writing objects: 100% (56/56)   Writing objects: 100% (56/56), 1.02 MiB | 5.65 MiB/s, done.
+Total 56 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/7)   [Kremote: Resolving deltas:  42% (3/7)   [Kremote: Resolving deltas:  57% (4/7)   [Kremote: Resolving deltas:  71% (5/7)   [Kremote: Resolving deltas:  85% (6/7)   [Kremote: Resolving deltas: 100% (7/7)   [Kremote: Resolving deltas: 100% (7/7), done.[K
+To https://github.com/katiehosey/donationapp.git
+   e852151..ec46d59  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+]0;~/Documents/CapeTown/guardian-angel/guardianKaties-MacBook-Pro-3:guardian katie$ [KKaties-MacBook-Pro-3:guardian katie$ git init
+Reinitialized existing Git repository in /Users/katie/Documents/CapeTown/guardian-angel/guardian/.git/
+]0;~/Documents/CapeTown/guardian-angel/guardianKaties-MacBook-Pro-3:guardian katie$ git c[Kadd -A
